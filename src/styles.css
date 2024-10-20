@@ -1,9 +1,16 @@
-body {
-  font-family: var(--primary-font);
-}
-
 :root {
   --primary-font: "Poppins", sans-serif;
+  --background-color: rgb(201, 240, 230, 0.6);
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 header {
@@ -15,25 +22,66 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 60px;
   color: rgb(201, 240, 230);
-  text-shadow: rgb(75, 74, 71) 2px 0 10px;
+  padding: 260px 10px;
+  text-shadow: 2px 2px 4px rgb(75, 74, 71);
 }
 
 h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 1.5;
-  margin: 0;
+  line-height: 1.25;
+  margin: 30px 0;
 }
 
 h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 1.5;
+  margin: 0;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(201, 240, 230);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 32px;
+  background-color: grey;
+  display: inline-block;
+  padding: 16px 32px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+header a:hover {
+  color: #ffc4fb;
+  background-color: var(--background-color);
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px, 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 24px;
+  }
+  header h3 {
+    font-size: 16px;
+  }
 }
