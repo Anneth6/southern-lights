@@ -1,5 +1,39 @@
+body {
+  font-family: var(--primary-font);
+}
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(../media/cradle-mountain-GarthSmith.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 60px;
+  color: rgb(201, 240, 230);
+  text-shadow: rgb(75, 74, 71) 2px 0 10px;
+}
+
 h1 {
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 96px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
