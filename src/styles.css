@@ -9,6 +9,28 @@ body {
   background-color: var(--background-color);
 }
 
+.button {
+  display: block;
+  background-color: var(--background-color);
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #834068;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 25px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: rgb(201, 240, 230);
+  background-color: grey;
+  text-shadow: 2px 2px 4px rgb(75, 74, 71);
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -24,10 +46,24 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-column-fist-narrow {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 20px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+.secondary {
+  background-color: rgb(228, 228, 228, 0.35);
 }
 
 .social-links {
@@ -36,14 +72,32 @@ body {
   text-decoration: none;
 }
 
-.img-responsive {
-  max-width: 100%;
+.text-cedntre {
+  text-align: center;
 }
 
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 30px;
+.view-card {
+  background-color: white;
+  padding: 10px;
+  margin: 30px 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-card-header {
+  padding: 10px 1px;
+}
+
+.view-card-body {
+  padding: 30px;
+}
+
+.view-card-footer {
+  padding: 15px;
+}
+
+.view-card-body p {
+  padding-top: 10px;
 }
 
 header {
@@ -109,6 +163,14 @@ main {
   background-color: white;
 }
 
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #834068;
+  margin: 0;
+}
+
 main h3 {
   font-weight: 700;
   font-size: 16px;
@@ -120,11 +182,18 @@ main h3 {
   margin: 0;
 }
 
-main h2 {
+main h4 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 1.25;
   color: #834068;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.25;
   margin: 0;
 }
 
@@ -135,6 +204,12 @@ main p {
   line-height: 1.5;
   color: #272044;
   opacity: 0.8;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px 30px;
 }
 
 footer {
