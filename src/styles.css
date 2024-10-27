@@ -223,6 +223,12 @@ main p {
   opacity: 0.8;
 }
 
+footer section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 30px 200px 30px;
+}
+
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -231,7 +237,7 @@ section {
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-    url(../media/cradle-mountain-GarthSmith.jpg);
+    url(../media/ruins-of-horton-college-LukeTscharke.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 10px;
