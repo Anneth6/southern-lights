@@ -1,6 +1,7 @@
 :root {
   --primary-font: "Poppins", sans-serif;
   --background-color: rgb(201, 240, 230, 0.6);
+  --social-icon-color: rgb(201, 240, 230, 0.8);
 }
 
 body {
@@ -10,6 +11,22 @@ body {
 
 .container {
   max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+section {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -67,11 +84,65 @@ header a {
 }
 
 header a:hover {
-  color: #ffc4fb;
+  color: #834068;
   background-color: var(--background-color);
+  text-shadow: none;
 }
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(../media/cradle-mountain-GarthSmith.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  color: rgb(201, 240, 230);
+  opacity: 0.8;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgb(75, 74, 71);
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  font-weight: 600;
+  color: rgb(201, 240, 230);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #d990b7;
+}
+
+footer .svg-icons {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  margin: 10px 20px 10px 0;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px, 0;
   }
